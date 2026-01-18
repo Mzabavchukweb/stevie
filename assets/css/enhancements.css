@@ -1,0 +1,242 @@
+/* ═══════════════════════════════════════════════════════════════
+   MODERN UI/UX ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────
+   GLASSMORPHISM EFFECTS
+   ───────────────────────────────────────────────────────────── */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-strong {
+  background: rgba(22, 22, 22, 0.85);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SUBTLE GRADIENT OVERLAYS
+   ───────────────────────────────────────────────────────────── */
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(10, 61, 145, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(10, 61, 145, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradient-overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ENHANCED HOVER STATES
+   ───────────────────────────────────────────────────────────── */
+.hover-lift {
+  transition: transform var(--transition-base) var(--ease-out-expo),
+              box-shadow var(--transition-base) var(--ease-out-expo);
+}
+
+.hover-lift:hover {
+  transform: translate3d(0, -4px, 0);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.hover-glow {
+  transition: box-shadow var(--transition-base);
+}
+
+.hover-glow:hover {
+  box-shadow: 
+    0 0 0 1px rgba(10, 61, 145, 0.3),
+    0 8px 32px rgba(10, 61, 145, 0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BORDER GRADIENTS
+   ───────────────────────────────────────────────────────────── */
+.border-gradient {
+  position: relative;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-light) 50%,
+    var(--color-primary) 100%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  transition: opacity var(--transition-base);
+}
+
+.border-gradient:hover::before {
+  opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SHIMMER EFFECT
+   ───────────────────────────────────────────────────────────── */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   FOCUS RING ENHANCEMENTS
+   ───────────────────────────────────────────────────────────── */
+.focus-ring {
+  outline: none;
+  transition: box-shadow var(--transition-fast);
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 
+    0 0 0 3px rgba(10, 61, 145, 0.3),
+    0 0 0 5px rgba(10, 61, 145, 0.1);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SMOOTH SCALE ON INTERACT
+   ───────────────────────────────────────────────────────────── */
+.interactive-scale {
+  transition: transform var(--transition-fast) var(--ease-out-expo);
+}
+
+.interactive-scale:active {
+  transform: scale3d(0.98, 0.98, 1);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TEXT GRADIENT
+   ───────────────────────────────────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-text) 0%,
+    var(--color-primary-light) 50%,
+    var(--color-text) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ENHANCED CARDS WITH DEPTH
+   ───────────────────────────────────────────────────────────── */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform var(--transition-base) var(--ease-out-expo);
+}
+
+.card-3d:hover {
+  transform: translate3d(0, -6px, 0) rotate3d(1, 0, 0, 2deg);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PULSING ACCENT
+   ───────────────────────────────────────────────────────────── */
+.pulse-accent {
+  position: relative;
+}
+
+.pulse-accent::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: var(--color-primary-light);
+  opacity: 0;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    opacity: 0;
+    transform: scale3d(0.95, 0.95, 1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale3d(1.05, 1.05, 1);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SMOOTH COLOR TRANSITIONS
+   ───────────────────────────────────────────────────────────── */
+.color-transition {
+  transition: 
+    color var(--transition-base),
+    background-color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ENHANCED SHADOWS
+   ───────────────────────────────────────────────────────────── */
+.shadow-elevated {
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.shadow-glow-primary {
+  box-shadow: 
+    0 8px 32px rgba(10, 61, 145, 0.4),
+    0 0 0 1px rgba(10, 61, 145, 0.2);
+}

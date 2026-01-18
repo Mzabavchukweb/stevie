@@ -1,0 +1,20 @@
+/* ═══════════════════════════════════════════════════════════════
+   CRITICAL CSS — Above the fold
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Minimal critical styles for immediate render */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0F0F0F;
+  color: #FFFFFF;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 300;
+}

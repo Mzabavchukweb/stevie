@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Stevie Athletics | Athletic Performance",
+    "description": "Athletic performance training for athletes and active individuals. Online, Hybrid, In-Studio."
+  },
+  "hero": {
+    "headline": "PERFORMANCE STARTS HERE",
+    "subheadline": "Athletic performance training for athletes and active individuals",
+    "description": "Strength • Explosiveness • Resilience",
+    "cta": {
+      "primary": {
+        "text": "Book consultation",
+        "type": "calendly_general"
+      },
+      "secondary": {
+        "text": "Check your level (2–3 min)",
+        "link": "/pages/performance-assessment.html"
+      }
+    }
+  },
+  "forWhom": {
+    "headline": "FOR WHOM",
+    "shortList": [
+      "Athletes looking to level up",
+      "People returning from injury",
+      "Active individuals focused on long-term health",
+      "Those who take training seriously"
+    ],
+    "cta": {
+      "text": "See full selection",
+      "link": "/pages/oferta.html#selekcja"
+    }
+  },
+  "services": {
+    "headline": "FORMS OF COOPERATION",
+    "tiles": [
+      {
+        "id": "online",
+        "title": "ONLINE",
+        "description": "Individual plan, feedback, constant contact",
+        "link": "/pages/oferta.html#online"
+      },
+      {
+        "id": "hybryda",
+        "title": "HYBRID",
+        "description": "Online plan + in-person sessions + testing",
+        "link": "/pages/oferta.html#hybryda"
+      },
+      {
+        "id": "stacjonarnie",
+        "title": "IN-STUDIO",
+        "description": "1:1 training with full supervision",
+        "link": "/pages/oferta.html#stacjonarnie"
+      }
+    ]
+  },
+  "socialProof": {
+    "headline": "SUCCESS STORIES",
+    "cta": {
+      "text": "See stories",
+      "link": "/pages/case-studies.html"
+    }
+  },
+  "finalCta": {
+    "headline": "READY FOR CHANGE?",
+    "cta": {
+      "primary": {
+        "text": "Book consultation",
+        "type": "calendly_general"
+      },
+      "secondary": {
+        "text": "Message on WhatsApp",
+        "type": "whatsapp"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "FAQ | Stevie Athletics",
+    "description": "Najczęściej zadawane pytania o treningi przygotowania motorycznego."
+  },
+  "headline": "NAJCZĘŚCIEJ ZADAWANE PYTANIA",
+  "categories": [
+    {
+      "name": "Oferta",
+      "questions": [
+        {
+          "question": "Dla kogo są te treningi?",
+          "answer": "Dla sportowców amatorskich i zawodowych, osób chcących rozwijać się motorycznie, wracających po kontuzjach oraz wszystkich świadomych, którzy chcą długofalowo inwestować w swoje ciało i sprawność."
+        },
+        {
+          "question": "Jaka jest różnica między treningami online a hybrydowymi?",
+          "answer": "Treningi online to indywidualny plan, który realizujesz samodzielnie ze stałym wsparciem i feedbackiem. Hybryda łączy to z okresowymi sesjami stacjonarnymi, testami i bezpośrednią korektą techniki. Hybryda daje większą kontrolę nad postępami."
+        },
+        {
+          "question": "Czy treningi online są skuteczne?",
+          "answer": "Tak, pod warunkiem że jesteś osobą świadomą, zmotywowaną i potrafisz trenować samodzielnie. Kluczowy jest regularny feedback i komunikacja. Dla osób początkujących lub po kontuzjach rekomenduję start od sesji stacjonarnej."
+        },
+        {
+          "question": "Czy oferujecie jednorazowe plany treningowe?",
+          "answer": "Nie. Współpraca opiera się na procesie, nie jednorazowym produkcie. Efekty wymagają czasu, regularności i ciągłego dostosowywania planu do Twojego rozwoju."
+        }
+      ]
+    },
+    {
+      "name": "Proces",
+      "questions": [
+        {
+          "question": "Czy muszę mieć doświadczenie treningowe?",
+          "answer": "Nie. Plany są dopasowane do Twojego poziomu. Jeśli jesteś początkujący, zaczniesz od fundamentów. Jeśli jesteś zaawansowany, skupimy się na optymalizacji i słabych punktach."
+        },
+        {
+          "question": "Jak często muszę trenować?",
+          "answer": "Minimum to 2–3 jednostki tygodniowo. Optymalna częstotliwość zależy od Twoich celów, etapu sezonu i możliwości regeneracyjnych. Ustalimy to indywidualnie."
+        },
+        {
+          "question": "Kiedy zobaczę pierwsze efekty?",
+          "answer": "Pierwsze zmiany (lepsza technika, świadomość ciała, więcej energii) odczujesz już po 3–4 tygodniach. Widoczne zmiany siły i wydolności to kwestia 8–12 tygodni systematycznej pracy."
+        },
+        {
+          "question": "Jak wygląda trening w trakcie sezonu?",
+          "answer": "W sezonie skupiamy się na utrzymaniu siły i mocy, prewencji urazów oraz optymalnej regeneracji. Objętość jest mniejsza, ale jakość bodźca wysoka. Celem jest nie obciążać, a wspierać Twój performance meczowy."
+        }
+      ]
+    },
+    {
+      "name": "Kontuzje",
+      "questions": [
+        {
+          "question": "Czy mogę trenować po kontuzji?",
+          "answer": "Tak, ale bezpieczeństwo jest priorytetem. Jeśli masz świeżą kontuzję lub przewlekłe problemy, rekomenduję start od konsultacji stacjonarnej i analizy ruchu. Wspólnie ustalimy bezpieczną ścieżkę powrotu."
+        },
+        {
+          "question": "Czy pomagacie w powrocie do sportu po urazie?",
+          "answer": "Tak, to jeden z głównych obszarów mojej pracy. Return-to-sport to proces – od podstawowych wzorców, przez siłę i stabilizację, po pełną eksplozywność. Współpracuję też z fizjoterapeutami gdy jest taka potrzeba."
+        }
+      ]
+    },
+    {
+      "name": "Organizacja",
+      "questions": [
+        {
+          "question": "Gdzie odbywają się treningi stacjonarne?",
+          "answer": "Treningi stacjonarne odbywają się w studio Prosport w Szczecinie, ul. Chopina 35. To w pełni wyposażona siłownia z przestrzenią do treningu funkcjonalnego."
+        },
+        {
+          "question": "Jak wygląda pierwsza konsultacja?",
+          "answer": "Pierwsza konsultacja to wywiad o Twoich celach, historii treningowej i zdrowotnej, analiza obecnego stanu oraz omówienie rekomendowanej ścieżki współpracy. Trwa około 45–60 minut."
+        },
+        {
+          "question": "W jakich językach prowadzicie współpracę?",
+          "answer": "Współpracuję w języku polskim, angielskim, hiszpańskim i francuskim. Jeśli jesteś sportowcem z zagranicy – śmiało się odezwij."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "primary": {
+      "text": "Umów konsultację",
+      "type": "calendly_general"
+    },
+    "secondary": {
+      "text": "Napisz na WhatsApp",
+      "type": "whatsapp"
+    }
+  }
+}

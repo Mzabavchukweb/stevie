@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Stevie Athletics | Przygotowanie Motoryczne",
+    "description": "Treningi przygotowania motorycznego dla sportowców i osób aktywnych. Online, Hybrydowe, Stacjonarne."
+  },
+  "hero": {
+    "headline": "PERFORMANCE ZACZYNA SIĘ TUTAJ",
+    "subheadline": "Przygotowanie motoryczne dla sportowców i aktywnych ludzi",
+    "description": "Siła • Eksplozywność • Odporność",
+    "cta": {
+      "primary": {
+        "text": "Umów konsultację",
+        "type": "calendly_general"
+      },
+      "secondary": {
+        "text": "Sprawdź swój poziom (2–3 min)",
+        "link": "/pages/performance-assessment.html"
+      }
+    },
+    "video": {
+      "src": "hero-video.mp4",
+      "poster": "hero-poster.jpg"
+    }
+  },
+  "forWhom": {
+    "headline": "DLA KOGO",
+    "shortList": [
+      "Sportowców chcących podnieść swój level",
+      "Osób wracających po kontuzji",
+      "Aktywnych ludzi dbających o zdrowie długofalowo",
+      "Tych, którzy traktują trening poważnie"
+    ],
+    "notFor": [
+      "Osób szukających magicznych rozwiązań"
+    ],
+    "cta": {
+      "text": "Zobacz pełną selekcję",
+      "link": "/pages/oferta.html#selekcja"
+    }
+  },
+  "services": {
+    "headline": "FORMY WSPÓŁPRACY",
+    "tiles": [
+      {
+        "id": "online",
+        "title": "ONLINE",
+        "description": "Indywidualny plan, feedback, stały kontakt",
+        "link": "/pages/oferta.html#online"
+      },
+      {
+        "id": "hybryda",
+        "title": "HYBRYDA",
+        "description": "Plan online + sesje stacjonarne + testy",
+        "link": "/pages/oferta.html#hybryda"
+      },
+      {
+        "id": "stacjonarnie",
+        "title": "STACJONARNIE",
+        "description": "Trening 1:1 w studio z pełnym nadzorem",
+        "link": "/pages/oferta.html#stacjonarnie"
+      }
+    ]
+  },
+  "socialProof": {
+    "headline": "HISTORIE SUKCESU",
+    "cases": [
+      {
+        "id": "krzysiu",
+        "name": "Krzysiu",
+        "detail": "17 lat • Piłka nożna",
+        "quote": "Z Stevenem pracuję od 2 lat. Dziś jestem fizycznie gotowy na każdy mecz."
+      },
+      {
+        "id": "ekstraklasa",
+        "name": "Zawodnicy Ekstraklasy",
+        "detail": "Piłka nożna profesjonalna",
+        "quote": "Wracam do Stevena co off-season, bo wiem, że wyjdę silniejszy."
+      },
+      {
+        "id": "atletyczni",
+        "name": "Atletyczni",
+        "detail": "Zdrowie & styl życia",
+        "quote": "Chcę być sprawny i zdrowy przez lata. Steven pomógł mi to osiągnąć."
+      }
+    ],
+    "cta": {
+      "text": "Zobacz historie",
+      "link": "/pages/case-studies.html"
+    }
+  },
+  "finalCta": {
+    "headline": "GOTOWY NA ZMIANĘ?",
+    "cta": {
+      "primary": {
+        "text": "Umów konsultację",
+        "type": "calendly_general"
+      },
+      "secondary": {
+        "text": "Napisz na WhatsApp",
+        "type": "whatsapp"
+      }
+    }
+  }
+}

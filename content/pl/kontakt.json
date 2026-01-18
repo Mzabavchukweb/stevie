@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Kontakt | Stevie Athletics",
+    "description": "Umów konsultację online lub stacjonarną. Sprawdź dostępność i zarezerwuj termin."
+  },
+  "headline": "KONTAKT",
+  "subheadline": "Wybierz formę konsultacji i zarezerwuj termin",
+  "consultations": {
+    "online": {
+      "title": "KONSULTACJA ONLINE",
+      "forWhom": [
+        "Sportowcy spoza Szczecina",
+        "Osoby z elastycznym harmonogramem",
+        "Ci, którzy preferują kontakt zdalny"
+      ],
+      "includes": [
+        "Wywiad o celach i historii treningowej",
+        "Analiza aktualnego stanu",
+        "Rekomendacje i plan działania",
+        "Sesja Q&A"
+      ],
+      "availability": "Elastyczne godziny, dostosowane do Twojej strefy czasowej",
+      "cta": {
+        "text": "Umów konsultację online",
+        "type": "calendly_online"
+      }
+    },
+    "offline": {
+      "title": "KONSULTACJA STACJONARNA",
+      "forWhom": [
+        "Sportowcy lokalni (Szczecin)",
+        "Osoby po kontuzjach wymagające nadzoru",
+        "Ci, którzy cenią bezpośredni kontakt"
+      ],
+      "includes": [
+        "Trening 1:1 z analizą ruchu",
+        "Korekta techniki w czasie rzeczywistym",
+        "Indywidualne zalecenia",
+        "Plan dalszego działania"
+      ],
+      "availability": "Ograniczona liczba miejsc",
+      "cta": {
+        "text": "Sprawdź dostępność",
+        "type": "calendly_offline"
+      }
+    }
+  },
+  "location": {
+    "title": "LOKALIZACJA",
+    "name": "Prosport",
+    "address": "ul. Chopina 35",
+    "city": "Szczecin"
+  },
+  "whatsapp": {
+    "title": "SZYBKI KONTAKT",
+    "description": "Masz pytanie? Napisz bezpośrednio na WhatsApp.",
+    "cta": {
+      "text": "Napisz na WhatsApp",
+      "type": "whatsapp"
+    }
+  },
+  "form": {
+    "title": "FORMULARZ KONTAKTOWY",
+    "description": "Zostaw wiadomość, a odezwę się najszybciej jak to możliwe.",
+    "fields": {
+      "name": {
+        "label": "Imię",
+        "placeholder": "Twoje imię"
+      },
+      "contact": {
+        "label": "Email lub telefon",
+        "placeholder": "jan@example.com lub +48 123 456 789"
+      },
+      "message": {
+        "label": "Wiadomość",
+        "placeholder": "Opisz swój cel i pytania..."
+      }
+    },
+    "submit": "Wyślij wiadomość"
+  }
+}

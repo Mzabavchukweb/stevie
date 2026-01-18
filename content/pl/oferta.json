@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Oferta | Stevie Athletics",
+    "description": "Treningi przygotowania motorycznego - Online, Hybrydowe, Stacjonarne. Performance, zdrowie, długofalowy rozwój."
+  },
+  "intro": {
+    "headline": "TRENINGI PRZYGOTOWANIA MOTORYCZNEGO",
+    "subheadline": "Performance • Zdrowie • Długofalowy rozwój",
+    "description": "Wybierz formę współpracy dopasowaną do Twoich celów, stylu życia i możliwości."
+  },
+  "services": [
+    {
+      "id": "online",
+      "name": "TRENINGI ONLINE",
+      "tagline": "Trenuj gdziekolwiek jesteś",
+      "description": "Indywidualny plan treningowy dopasowany do Twojego harmonogramu i celów.",
+      "features": [
+        "Indywidualny plan dopasowany do celu, etapu sezonu i historii urazów",
+        "Optymalna objętość, intensywność i regeneracja",
+        "Szczegółowo opisane jednostki treningowe",
+        "Regularne aktualizacje planu",
+        "Feedback techniczny (video/opis)",
+        "Stały kontakt online"
+      ],
+      "forWhom": [
+        "Sportowcy spoza Szczecina",
+        "Osoby z elastycznym harmonogramem",
+        "Świadomi zawodnicy szukający wsparcia",
+        "Ci, którzy potrafią trenować samodzielnie"
+      ],
+      "badge": "Rekomendowane po Performance Assessment",
+      "cta": {
+        "text": "Zamów plan treningowy",
+        "type": "contact"
+      }
+    },
+    {
+      "id": "hybryda",
+      "name": "TRENINGI HYBRYDOWE",
+      "tagline": "Online + Stacjonarnie",
+      "description": "Najbardziej kompleksowa forma współpracy. Łączy elastyczność treningu online z precyzją sesji stacjonarnych.",
+      "features": [
+        "Indywidualny plan do samodzielnej realizacji",
+        "Okresowe treningi stacjonarne w studio",
+        "Regularne testy i analiza postępów",
+        "Dostosowania planu na bieżąco"
+      ],
+      "forWhom": [
+        "Sportowcy szukający kompleksowego wsparcia",
+        "Osoby chcące łączyć samodzielność z kontrolą",
+        "Zawodnicy przygotowujący się do sezonu"
+      ],
+      "seasonBlocks": [
+        {
+          "title": "W TRAKCIE SEZONU",
+          "points": [
+            "Utrzymanie siły i mocy",
+            "Prewencja urazów",
+            "Optymalna regeneracja",
+            "Mała objętość, wysoka jakość bodźca"
+          ]
+        },
+        {
+          "title": "OFF-SEASON / PRE-SEASON",
+          "points": [
+            "Fundamenty: siła maksymalna, eksplozywność",
+            "Mobilność i stabilizacja",
+            "Korekta słabych ogniw",
+            "Odbudowa po sezonie"
+          ]
+        }
+      ],
+      "cta": {
+        "text": "Umów konsultację",
+        "type": "calendly_general"
+      }
+    },
+    {
+      "id": "stacjonarnie",
+      "name": "TRENINGI STACJONARNE",
+      "tagline": "1:1 w studio",
+      "description": "Pełna opieka i bezpośredni nadzór nad każdym ruchem. Dla tych, którzy chcą maksymalnej precyzji.",
+      "features": [
+        "Trening 1:1 z pełnym nadzorem",
+        "Szczegółowa analiza ruchu",
+        "Korekta wzorców ruchowych",
+        "Prewencja i powrót po urazach",
+        "Pełna opieka na każdym etapie"
+      ],
+      "forWhom": [
+        "Osoby po kontuzjach wymagające nadzoru",
+        "Sportowcy lokalni (Szczecin)",
+        "Ci, którzy cenią bezpośredni kontakt",
+        "Osoby rozpoczynające przygodę z treningiem siłowym"
+      ],
+      "limitedSpots": true,
+      "cta": {
+        "text": "Sprawdź dostępność",
+        "type": "calendly_offline"
+      }
+    }
+  ],
+  "selection": {
+    "headline": "DLA KOGO SĄ TE TRENINGI",
+    "forWhom": {
+      "title": "Dla kogo jest ta współpraca",
+      "items": [
+        "Sportowców amatorskich i zawodowych (piłka nożna, koszykówka, lekkoatletyka i inne)",
+        "Osób chcących rozwijać się motorycznie (siła, eksplozywność, mobilność)",
+        "Osób wracających po kontuzjach, szukających bezpiecznej progresji",
+        "Osób świadomych, które chcą długofalowo inwestować w swoje ciało",
+        "Osób aktywnych, którym zależy na zdrowiu i sprawności przez lata"
+      ]
+    },
+    "notForWhom": {
+      "title": "Dla kogo NIE jest ta współpraca",
+      "items": [
+        "Osób szukających magicznych rozwiązań i szybkich efektów bez wysiłku",
+        "Osób, które nie są gotowe na regularną pracę (min. 2–3 jednostki tygodniowo)",
+        "Osób oczekujących jednorazowego planu bez kontaktu i feedbacku",
+        "Osób, które nie chcą współpracować i komunikować się",
+        "Osób szukających typowych planów kulturystycznych (to nie ta bajka)"
+      ]
+    }
+  },
+  "notSure": {
+    "headline": "NIE WIESZ, CO WYBRAĆ?",
+    "description": "Odpowiedz na kilka pytań, a pokażę Ci rekomendowaną ścieżkę współpracy.",
+    "cta": {
+      "text": "Sprawdź swój poziom (2 min)",
+      "link": "/pages/performance-assessment.html"
+    }
+  }
+}

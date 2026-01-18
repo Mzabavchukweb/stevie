@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Performance Assessment | Stevie Athletics",
+    "description": "Sprawdź swój poziom i otrzymaj spersonalizowaną rekomendację współpracy."
+  },
+  "hero": {
+    "headline": "PERFORMANCE ASSESSMENT",
+    "subheadline": "Odpowiedz na 8 pytań i dowiedz się, jaka forma współpracy będzie dla Ciebie najlepsza.",
+    "duration": "2–3 min"
+  },
+  "questions": [
+    {
+      "id": "age",
+      "question": "W jakim jesteś wieku?",
+      "options": [
+        {"value": "14-17", "label": "14–17 lat"},
+        {"value": "18-25", "label": "18–25 lat"},
+        {"value": "26-35", "label": "26–35 lat"},
+        {"value": "36+", "label": "36+ lat"}
+      ]
+    },
+    {
+      "id": "awareness",
+      "question": "Jak oceniasz swoją świadomość treningową?",
+      "options": [
+        {"value": "beginner", "label": "Początkujący – nie wiem od czego zacząć"},
+        {"value": "basic", "label": "Podstawowa – znam podstawy, ale potrzebuję wsparcia"},
+        {"value": "intermediate", "label": "Średnia – trenuję regularnie, ale chcę się rozwijać"},
+        {"value": "advanced", "label": "Zaawansowana – wiem co robię, szukam optymalizacji"}
+      ]
+    },
+    {
+      "id": "injury",
+      "question": "Czy masz obecnie kontuzję lub uraz?",
+      "options": [
+        {"value": "fresh", "label": "Tak, świeży uraz (ostatnie 4 tygodnie)"},
+        {"value": "chronic", "label": "Tak, przewlekły problem (powtarzający się ból)"},
+        {"value": "occasional", "label": "Sporadyczne dolegliwości (od czasu do czasu)"},
+        {"value": "none", "label": "Nie, jestem zdrowy"}
+      ]
+    },
+    {
+      "id": "frequency",
+      "question": "Jak często trenujesz obecnie?",
+      "options": [
+        {"value": "0-1", "label": "0–1 raz w tygodniu"},
+        {"value": "2-3", "label": "2–3 razy w tygodniu"},
+        {"value": "4-5", "label": "4–5 razy w tygodniu"},
+        {"value": "6+", "label": "6+ razy w tygodniu"}
+      ]
+    },
+    {
+      "id": "goal",
+      "question": "Jaki jest Twój główny cel?",
+      "options": [
+        {"value": "recovery", "label": "Powrót po kontuzji / nauka podstaw"},
+        {"value": "strength", "label": "Budowa siły i eksplozywności"},
+        {"value": "performance", "label": "Przygotowanie do sezonu / performance"},
+        {"value": "maintenance", "label": "Utrzymanie formy / zdrowie długofalowe"}
+      ]
+    },
+    {
+      "id": "preference",
+      "question": "Jaka forma treningu Ci odpowiada?",
+      "options": [
+        {"value": "studio", "label": "Wolę trening w studio z trenerem"},
+        {"value": "online", "label": "Wolę trening samodzielny z planem online"},
+        {"value": "hybrid", "label": "Hybryda – plan online + okresowe sesje stacjonarne"}
+      ]
+    },
+    {
+      "id": "independence",
+      "question": "Jak oceniasz swoją samodzielność treningową?",
+      "options": [
+        {"value": "low", "label": "Potrzebuję stałego nadzoru i prowadzenia"},
+        {"value": "medium-low", "label": "Potrzebuję wsparcia, ale potrafię wykonywać ćwiczenia"},
+        {"value": "medium-high", "label": "Jestem samodzielny, ale cenię feedback"},
+        {"value": "high", "label": "Jestem bardzo samodzielny i zdyscyplinowany"}
+      ]
+    },
+    {
+      "id": "contact",
+      "question": "Jak wolisz się kontaktować?",
+      "options": [
+        {"value": "in-person", "label": "Preferuję kontakt osobisty (stacjonarnie)"},
+        {"value": "online", "label": "Preferuję kontakt online (video/wiadomości)"}
+      ]
+    }
+  ],
+  "results": {
+    "A": {
+      "id": "A",
+      "headline": "NAJLEPSZY START: KONSULTACJA STACJONARNA",
+      "description": "Na podstawie Twoich odpowiedzi rekomenduję rozpoczęcie od spotkania w studio. Pozwoli to na dokładną analizę ruchu, omówienie Twoich celów i bezpieczne wdrożenie do treningu.",
+      "reasons": [
+        "Bezpośredni kontakt pozwoli lepiej ocenić Twój stan",
+        "Korekta techniki w czasie rzeczywistym",
+        "Bezpieczny start, szczególnie jeśli masz dolegliwości"
+      ],
+      "cta": {
+        "primary": {
+          "text": "Umów się na pierwszą sesję w studio",
+          "type": "calendly_offline"
+        },
+        "secondary": {
+          "text": "Napisz na WhatsApp",
+          "type": "whatsapp"
+        }
+      }
+    },
+    "B": {
+      "id": "B",
+      "headline": "REKOMENDACJA: KONSULTACJA ONLINE",
+      "description": "Twój poziom świadomości i preferencje wskazują, że konsultacja online będzie dobrym punktem startu. Omówimy Twoje cele i przygotuję indywidualny plan.",
+      "reasons": [
+        "Masz doświadczenie i świadomość treningową",
+        "Potrafisz trenować samodzielnie",
+        "Szukasz wsparcia i optymalizacji"
+      ],
+      "cta": {
+        "primary": {
+          "text": "Zarezerwuj konsultację online i odbierz indywidualny plan",
+          "type": "calendly_online"
+        }
+      }
+    },
+    "C": {
+      "id": "C",
+      "headline": "REKOMENDACJA: PLAN TRENINGOWY",
+      "description": "Jesteś świadomym i samodzielnym zawodnikiem. Indywidualny plan treningowy z regularnym feedbackiem będzie dla Ciebie optymalny.",
+      "reasons": [
+        "Wysoka samodzielność i dyscyplina",
+        "Jasne cele treningowe",
+        "Potrzebujesz planu, nie prowadzenia za rękę"
+      ],
+      "cta": {
+        "primary": {
+          "text": "Zamów plan treningowy",
+          "type": "contact"
+        },
+        "secondary": {
+          "text": "Chcę korektę/omówienie",
+          "type": "calendly_online"
+        }
+      }
+    }
+  },
+  "backButton": "Zmień odpowiedzi"
+}

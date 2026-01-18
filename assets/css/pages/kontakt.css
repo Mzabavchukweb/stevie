@@ -1,0 +1,299 @@
+/* ═══════════════════════════════════════════════════════════════
+   KONTAKT PAGE STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.page-hero {
+  padding-top: calc(var(--header-height) + var(--space-4xl));
+  padding-bottom: var(--space-2xl);
+  text-align: center;
+  background: linear-gradient(180deg, rgba(10, 61, 145, 0.1) 0%, var(--color-bg) 100%);
+}
+
+.page-hero__headline {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-md);
+}
+
+.page-hero__subheadline {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Cards */
+.contact-card {
+  background: rgba(23, 23, 23, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-card--featured {
+  border-color: var(--color-primary);
+  background: linear-gradient(145deg, rgba(10, 61, 145, 0.15) 0%, rgba(23, 23, 23, 0.8) 100%);
+  box-shadow: 0 0 30px rgba(10, 61, 145, 0.15);
+}
+
+.contact-card--featured:hover {
+  box-shadow: 0 0 40px rgba(10, 61, 145, 0.25);
+  border-color: var(--color-primary-light);
+}
+
+.contact-card__icon {
+  width: 56px;
+  height: 56px;
+  color: var(--color-primary-light);
+  margin-bottom: var(--space-lg);
+  filter: drop-shadow(0 0 8px rgba(10, 61, 145, 0.4));
+}
+
+.contact-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-card__title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-xl);
+  color: #fff;
+}
+
+.contact-card__section {
+  margin-bottom: var(--space-lg);
+}
+
+.contact-card__section h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.contact-card__section .list {
+  gap: var(--space-sm);
+}
+
+.contact-card__section .list__item {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.contact-card__availability {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  margin-top: auto;
+}
+
+.contact-card__availability svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+}
+
+.contact-card__availability--limited {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.contact-card__availability--limited svg {
+  color: #ef4444;
+}
+
+/* Location Section */
+.location-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+@media (max-width: 968px) {
+  .location-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+.location-info__title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.location-info__address {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed);
+}
+
+.location-info__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.location-info__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.location-info__description {
+  color: var(--color-text-secondary);
+}
+
+.location-map {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Alternatives */
+.contact-alternatives {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 968px) {
+  .contact-alternatives {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WhatsApp Card */
+.whatsapp-card {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.1) 0%, rgba(23, 23, 23, 0.6) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.whatsapp-card__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-lg);
+  color: #25D366;
+  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.4));
+}
+
+.whatsapp-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-sm);
+  color: #fff;
+}
+
+.whatsapp-card__description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  background: rgba(23, 23, 23, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+}
+
+.contact-form-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-sm);
+  color: #fff;
+}
+
+.contact-form-card__description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--weight-medium);
+}
+
+.form-input,
+.form-textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-size: var(--text-base);
+  color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(10, 61, 145, 0.2);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}

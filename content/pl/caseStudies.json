@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Case Studies | Stevie Athletics",
+    "description": "Historie sukcesu sportowców współpracujących ze Stevie Athletics."
+  },
+  "headline": "HISTORIE SUKCESU",
+  "subheadline": "Realne efekty, realni ludzie",
+  "cases": [
+    {
+      "id": "krzysiu",
+      "name": "Krzysiu",
+      "age": "17 lat",
+      "sport": "Piłka nożna",
+      "image": "krzysiu.jpg",
+      "quote": "Z Stevenem pracuję od 2 lat. Zaczynaliśmy od podstaw, a dziś jestem fizycznie gotowy na każdy mecz.",
+      "goal": "Rozwój atletyczny i przygotowanie do przejścia na poziom seniorski",
+      "process": [
+        "Budowa fundamentów siłowych (squat, hip hinge, push/pull)",
+        "Stopniowe wprowadzanie eksplozywności",
+        "Praca nad stabilizacją i kontrolą ciała",
+        "Periodyzacja pod sezon ligowy"
+      ],
+      "results": [
+        "Wzrost siły o 40% w kluczowych wzorcach",
+        "Poprawa szybkości na 10m i 30m",
+        "Brak kontuzji przez 2 sezony",
+        "Pewność siebie w pojedynkach"
+      ],
+      "duration": "Współpraca trwa od 2 lat"
+    },
+    {
+      "id": "ekstraklasa",
+      "name": "Zawodnicy Ekstraklasy",
+      "sport": "Piłka nożna profesjonalna",
+      "image": "ekstraklasa.jpg",
+      "quote": "Wracam do Stevena co off-season, bo wiem, że wyjdę silniejszy i lepiej przygotowany na kolejny sezon.",
+      "goal": "Przygotowanie motoryczne na najwyższym poziomie, prewencja urazów",
+      "process": [
+        "Kompleksowa diagnoza stanu wyjściowego",
+        "Indywidualny plan off-season / pre-season",
+        "Regularne testy i korekty",
+        "Współpraca ze sztabem klubowym"
+      ],
+      "results": [
+        "Gotowość fizyczna na start sezonu",
+        "Redukcja mikrourazów",
+        "Lepsza kontrola ciała w dynamicznych sytuacjach",
+        "Szybszy powrót do formy po przerwie"
+      ],
+      "whyTheyReturn": "Zaufanie, efekty, profesjonalne podejście. Wiedzą, że mogą na mnie polegać."
+    },
+    {
+      "id": "atletyczni",
+      "name": "Atletyczni",
+      "sport": "Zdrowie & styl życia",
+      "image": "atletyczni.jpg",
+      "quote": "Nie jestem zawodowcem, ale chcę być sprawny i zdrowy przez lata. Steven pomógł mi to osiągnąć.",
+      "goal": "Sprawność, zdrowie, długofalowy rozwój bez ryzyka kontuzji",
+      "process": [
+        "Nauka prawidłowych wzorców ruchowych",
+        "Budowa siły funkcjonalnej",
+        "Praca nad mobilnością i stabilizacją",
+        "Nawyki, które zostają na lata"
+      ],
+      "results": [
+        "Koniec z bólami pleców",
+        "Więcej energii w codziennym życiu",
+        "Lepsze samopoczucie i pewność siebie",
+        "Świadomość własnego ciała"
+      ],
+      "duration": "Współpraca hybrydowa – plan online + sesje co 2–3 tygodnie"
+    }
+  ],
+  "cta": {
+    "text": "Umów konsultację",
+    "type": "calendly_general"
+  }
+}

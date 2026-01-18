@@ -1,0 +1,92 @@
+/* ═══════════════════════════════════════════════════════════════
+   ADDITIONAL PERFORMANCE OPTIMIZATIONS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────
+   REMOVE WILL-CHANGE AFTER ANIMATIONS
+   ───────────────────────────────────────────────────────────── */
+[data-animate].in-view {
+  will-change: auto !important;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE IMAGES
+   ───────────────────────────────────────────────────────────── */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   REDUCE REPAINTS
+   ───────────────────────────────────────────────────────────── */
+.section,
+.container {
+  contain: layout style;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE SCROLL PERFORMANCE
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DISABLE ANIMATIONS ON LOW-END DEVICES
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE FONT RENDERING
+   ───────────────────────────────────────────────────────────── */
+body {
+  font-display: swap;
+  text-rendering: optimizeSpeed;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   REMOVE UNNECESSARY SHADOWS ON MOBILE
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .card,
+  .btn,
+  .tile {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .card:hover,
+  .btn:hover,
+  .tile:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE GRADIENTS ON MOBILE
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .btn--primary {
+    background: var(--color-primary) !important;
+  }
+  
+  .hero__overlay {
+    background: rgba(15, 15, 15, 0.85) !important;
+  }
+}

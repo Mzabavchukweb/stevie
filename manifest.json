@@ -1,0 +1,16 @@
+{
+  "name": "Stevie Athletics",
+  "short_name": "StevieAthletics",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A3D91",
+  "theme_color": "#0A3D91",
+  "description": "Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych.",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

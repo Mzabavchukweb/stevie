@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "O mnie | Stevie Athletics",
+    "description": "Steven – trener przygotowania motorycznego. Poznaj moją historię i podejście do treningu."
+  },
+  "hero": {
+    "headline": "MOJE PODEJŚCIE",
+    "subheadline": "Od sportu do performance"
+  },
+  "bio": {
+    "intro": "Mam na imię Steven.",
+    "story": [
+      "Od dziecka sport był moją pasją. Grałem w piłkę, trenowałem lekkoatletykę, próbowałem różnych dyscyplin. Z czasem zaczęło mnie fascynować nie tyle samo granie, co to, co sprawia, że ciało działa lepiej – szybciej, mocniej, bardziej wytrzymale.",
+      "Zacząłem zgłębiać przygotowanie motoryczne, fizjologię wysiłku, biomechanikę. Szkoliłem się u najlepszych. Pracowałem z młodzieżą, amatorami i zawodowcami. Widziałem, jak odpowiedni trening zmienia nie tylko ciało, ale i głowę.",
+      "Dziś pomagam sportowcom i aktywnym ludziom rozwijać się motorycznie – budować siłę, eksplozywność, odporność na kontuzje. Ale też świadomość własnego ciała i pewność siebie w ruchu."
+    ]
+  },
+  "approach": {
+    "headline": "CZYM SIĘ KIERUJĘ",
+    "points": [
+      {
+        "title": "Rozwój mentalny i fizyczny",
+        "description": "Trening to nie tylko ciało. To budowanie charakteru, dyscypliny, pewności siebie. Oba aspekty się przenikają."
+      },
+      {
+        "title": "Długofalowe myślenie",
+        "description": "Nie szukam skrótów. Interesuje mnie proces, który daje efekty na lata, a nie szybkie rozwiązania, które kończą się kontuzją."
+      },
+      {
+        "title": "Indywidualne podejście",
+        "description": "Każdy jest inny. Inne cele, historia, możliwości. Plan musi być dopasowany do Ciebie, nie do szablonu."
+      },
+      {
+        "title": "Przejrzystość i komunikacja",
+        "description": "Chcę, żebyś rozumiał dlaczego robisz to, co robisz. Edukacja jest częścią procesu."
+      }
+    ]
+  },
+  "goals": {
+    "headline": "NA CZYM SIĘ SKUPIAM",
+    "items": [
+      "Siła i moc",
+      "Eksplozywność",
+      "Odporność na urazy",
+      "Kontrola ciała",
+      "Świadomość ruchu"
+    ]
+  },
+  "languages": {
+    "headline": "JĘZYKI",
+    "description": "Współpracuję w językach:",
+    "list": ["Polski", "English", "Español", "Français"]
+  },
+  "cta": {
+    "text": "Umów konsultację",
+    "type": "calendly_general"
+  }
+}

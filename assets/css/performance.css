@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════════════════════════
+   PERFORMANCE OPTIMIZATIONS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────
+   GPU ACCELERATION
+   ───────────────────────────────────────────────────────────── */
+.header,
+.mobile-cta,
+.card,
+.btn,
+.nav__link,
+.assessment__question {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  /* Only add will-change when actually animating */
+}
+
+/* Only add will-change during hover/active states */
+.card:hover,
+.btn:hover,
+.nav__link:hover {
+  will-change: transform;
+}
+
+.card:not(:hover),
+.btn:not(:hover),
+.nav__link:not(:hover) {
+  will-change: auto;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE ANIMATIONS
+   ───────────────────────────────────────────────────────────── */
+/* Use transform and opacity only for animations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce repaints with CSS containment */
+.card,
+.btn,
+.nav__link,
+.tile {
+  contain: layout style paint;
+}
+
+/* Only contain layout for sections (lighter) */
+.section {
+  contain: layout style;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAZY LOADING
+   ───────────────────────────────────────────────────────────── */
+img[loading="lazy"],
+video[loading="lazy"] {
+  content-visibility: auto;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   REDUCE BACKDROP FILTER (performance heavy)
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .header::before,
+  .mobile-cta,
+  .mobile-nav {
+    /* Only use backdrop-filter on modern browsers */
+    @supports (backdrop-filter: blur(1px)) {
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE SHADOWS
+   ───────────────────────────────────────────────────────────── */
+.card:hover,
+.btn:hover {
+  /* Use simpler shadows on mobile */
+  @media (max-width: 768px) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DISABLE ANIMATIONS ON LOW-END DEVICES
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CONTAINMENT FOR BETTER PERFORMANCE
+   ───────────────────────────────────────────────────────────── */
+.section {
+  contain: layout style;
+}
+
+.card,
+.tile {
+  contain: layout style paint;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   OPTIMIZE GRADIENTS
+   ───────────────────────────────────────────────────────────── */
+/* Use simpler gradients on mobile */
+@media (max-width: 768px) {
+  .btn--primary {
+    background: var(--color-primary);
+  }
+  
+  .hero__overlay {
+    background: rgba(15, 15, 15, 0.8);
+  }
+}

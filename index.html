@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne w Szczecinie. Zwiększ swoją siłę i wytrzymałość.">
+  <meta name="keywords"
+    content="przygotowanie motoryczne, trening siłowy, trening funkcjonalny, Szczecin, online, dla sportowców">
+  <meta name="author" content="Stevie Athletics">
+  <meta name="theme-color" content="#0A3D91">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stevieathletics.com/">
+  <meta property="og:title" content="Stevie Athletics | Przygotowanie Motoryczne">
+  <meta property="og:description"
+    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne.">
+  <meta property="og:image" content="https://stevieathletics.com/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://stevieathletics.com/">
+  <meta property="twitter:title" content="Stevie Athletics | Przygotowanie Motoryczne">
+  <meta property="twitter:description"
+    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne.">
+  <meta property="twitter:image" content="https://stevieathletics.com/assets/images/og-image.jpg">
+
+  <link rel="canonical" href="https://stevieathletics.com/">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+  <title>Stevie Athletics | Przygotowanie Motoryczne</title>
+
+  <!-- Preload Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="/" class="header__logo">
+          <span class="logo">
+            <span class="logo__mark">S</span>tevie Athletics
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="pages/oferta.html" class="nav__link">Oferta</a>
+            </li>
+            <li class="nav__item">
+              <a href="pages/performance-assessment.html" class="nav__link">Assessment</a>
+            </li>
+            <li class="nav__item">
+              <a href="pages/case-studies.html" class="nav__link">Case Studies</a>
+            </li>
+            <li class="nav__item">
+              <a href="pages/o-mnie.html" class="nav__link">O mnie</a>
+            </li>
+            <li class="nav__item">
+              <a href="pages/faq.html" class="nav__link">FAQ</a>
+            </li>
+            <li class="nav__item">
+              <a href="pages/kontakt.html" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+          <div class="nav__cta">
+            <a href="#" class="btn btn--primary" data-calendly="general" data-analytics="cta_calendly_click"
+              data-source="header">
+              Umów konsultację
+            </a>
+          </div>
+        </nav>
+
+        <button class="header__toggle hamburger" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav__backdrop" id="mobileBackdrop"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <ul class="mobile-nav__menu">
+        <li class="mobile-nav__item">
+          <a href="pages/oferta.html" class="mobile-nav__link">Oferta</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="pages/performance-assessment.html" class="mobile-nav__link">Assessment</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="pages/case-studies.html" class="mobile-nav__link">Case Studies</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="pages/o-mnie.html" class="mobile-nav__link">O mnie</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="pages/faq.html" class="mobile-nav__link">FAQ</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="pages/kontakt.html" class="mobile-nav__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-nav__cta">
+        <a href="#" class="btn btn--primary" data-calendly="general">Umów konsultację</a>
+        <a href="#" class="btn btn--whatsapp" data-whatsapp>
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="mobile-nav__socials">
+        <a href="#" class="mobile-nav__social" target="_blank" rel="noopener" aria-label="Instagram" data-instagram>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="section section--hero hero">
+        <div class="hero__background">
+          <div class="hero__gradient"></div>
+          <div class="hero__grid"></div>
+          <canvas id="heroCanvas" class="hero__canvas"></canvas>
+        </div>
+
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span>Przygotowanie Motoryczne</span>
+            </div>
+
+            <h1 class="hero__headline">
+              <span class="hero__headline-line reveal-text">Performance</span>
+              <span class="hero__headline-line hero__headline-line--accent reveal-text" data-delay="0.2">zaczyna się
+                tutaj</span>
+            </h1>
+
+            <p class="hero__subheadline reveal-text" data-delay="0.4">
+              Przygotowanie motoryczne dla sportowców i aktywnych ludzi
+            </p>
+
+            <div class="hero__features reveal-fade" data-delay="0.6">
+              <div class="hero__feature">
+                <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                <span>Siła</span>
+              </div>
+              <div class="hero__feature">
+                <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                <span>Eksplozywność</span>
+              </div>
+              <div class="hero__feature">
+                <svg class="hero__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+                <span>Odporność</span>
+              </div>
+            </div>
+
+            <div class="hero__cta cta-group reveal-fade" data-delay="0.8">
+              <a href="#" class="btn btn--primary btn--lg" data-calendly="general" data-source="hero">
+                <span>Umów konsultację</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="pages/performance-assessment.html" class="btn btn--secondary btn--lg">
+                <span>Sprawdź swój poziom</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__stats reveal-fade" data-delay="1.0">
+              <div class="hero__stat">
+                <div class="hero__stat-number">8</div>
+                <div class="hero__stat-label">Pytań w Assessment</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-number">3</div>
+                <div class="hero__stat-label">Formy współpracy</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-number">100%</div>
+                <div class="hero__stat-label">Indywidualne podejście</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__scroll-hint">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- Methodology Section (NEW) -->
+      <section class="section section--dark methodology" id="metodologia">
+        <div class="container">
+          <div class="section__header" data-gsap="fade-up">
+            <h2 class="section__headline">Metodologia</h2>
+            <p class="section__subheadline">Proces, który gwarantuje wyniki</p>
+          </div>
+
+          <div class="methodology__grid">
+            <div class="methodology__step" data-gsap="stagger-up">
+              <div class="methodology__number">01</div>
+              <h3 class="methodology__title">Assessment</h3>
+              <p class="methodology__desc">Analiza ruchu, historii i celów. Znajdujemy słabe ogniwa.</p>
+            </div>
+            <div class="methodology__step" data-gsap="stagger-up">
+              <div class="methodology__number">02</div>
+              <h3 class="methodology__title">Plan</h3>
+              <p class="methodology__desc">Strategia dopasowana do Twojego życia i możliwości.</p>
+            </div>
+            <div class="methodology__step" data-gsap="stagger-up">
+              <div class="methodology__number">03</div>
+              <h3 class="methodology__title">Execution</h3>
+              <p class="methodology__desc">Ciężka praca na treningach pod stałym nadzorem.</p>
+            </div>
+            <div class="methodology__step" data-gsap="stagger-up">
+              <div class="methodology__number">04</div>
+              <h3 class="methodology__title">Result</h3>
+              <p class="methodology__desc">Lepszy performance, brak bólu, większa pewność siebie.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- For Whom Section -->
+      <section class="section section--elevated" id="dla-kogo">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <h2 class="section__headline">Dla kogo</h2>
+            <p class="section__subheadline">Sprawdź, czy to współpraca dla Ciebie</p>
+          </div>
+
+          <div class="for-whom">
+            <div class="for-whom__column for-whom__column--yes" data-animate data-animate-delay="100">
+              <div class="for-whom__header">
+                <div class="for-whom__icon for-whom__icon--yes">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <h3 class="for-whom__title">Dla kogo jest</h3>
+              </div>
+              <ul class="list list--check">
+                <li class="list__item">Sportowców chcących podnieść swój level</li>
+                <li class="list__item">Osób wracających po kontuzji</li>
+                <li class="list__item">Aktywnych ludzi dbających o zdrowie długofalowo</li>
+                <li class="list__item">Tych, którzy traktują trening poważnie</li>
+                <li class="list__item">Osób gotowych na regularną pracę</li>
+              </ul>
+            </div>
+
+            <div class="for-whom__column for-whom__column--no" data-animate data-animate-delay="200">
+              <div class="for-whom__header">
+                <div class="for-whom__icon for-whom__icon--no">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 class="for-whom__title">Dla kogo NIE jest</h3>
+              </div>
+              <ul class="list list--cross">
+                <li class="list__item">Osób szukających magicznych rozwiązań</li>
+                <li class="list__item">Tych, którzy nie są gotowi na regularną pracę</li>
+                <li class="list__item">Osób oczekujących jednorazowego planu</li>
+                <li class="list__item">Tych, którzy nie chcą komunikować się</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center mt-4" data-animate data-animate-delay="300">
+            <a href="pages/oferta.html#selekcja" class="btn btn--secondary">
+              Zobacz pełną selekcję
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section" id="uslugi">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <h2 class="section__headline">Formy współpracy</h2>
+            <p class="section__subheadline">Wybierz formę dopasowaną do Twoich potrzeb</p>
+          </div>
+
+          <div class="grid grid--3">
+            <a href="pages/oferta.html#online" class="tile" data-animate data-animate-delay="100">
+              <div class="tile__icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="8" y="8" width="48" height="36" rx="4" />
+                  <path d="M20 52h24" />
+                  <path d="M32 44v8" />
+                  <circle cx="32" cy="26" r="8" />
+                </svg>
+              </div>
+              <h3 class="tile__title">Online</h3>
+              <p class="tile__description">Indywidualny plan, feedback, stały kontakt</p>
+            </a>
+
+            <a href="pages/oferta.html#hybryda" class="tile" data-animate data-animate-delay="200">
+              <div class="tile__icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="20" cy="32" r="12" />
+                  <circle cx="44" cy="32" r="12" />
+                  <path d="M32 20v24" stroke-dasharray="4 4" />
+                </svg>
+              </div>
+              <h3 class="tile__title">Hybryda</h3>
+              <p class="tile__description">Plan online + sesje stacjonarne + testy</p>
+            </a>
+
+            <a href="pages/oferta.html#stacjonarnie" class="tile" data-animate data-animate-delay="300">
+              <div class="tile__icon">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M32 8l24 14v20L32 56 8 42V22L32 8z" />
+                  <circle cx="32" cy="32" r="8" />
+                  <path d="M32 24v-8" />
+                  <path d="M38 28l6-4" />
+                  <path d="M26 28l-6-4" />
+                </svg>
+              </div>
+              <h3 class="tile__title">Stacjonarnie</h3>
+              <p class="tile__description">Trening 1:1 w studio z pełnym nadzorem</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Proof Section -->
+      <section class="section section--gradient" id="historie">
+        <div class="container">
+          <div class="section__header" data-animate>
+            <h2 class="section__headline">Historie sukcesu</h2>
+            <p class="section__subheadline">Realne efekty, realni ludzie</p>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="card card--case" data-animate data-animate-delay="100">
+              <div class="card__meta">
+                <span class="card__meta-item">17 lat</span>
+                <span class="card__meta-item">Piłka nożna</span>
+              </div>
+              <h3 class="card__title">Krzysiu</h3>
+              <blockquote class="card__quote">
+                „Z Stevenem pracuję od 2 lat. Dziś jestem fizycznie gotowy na każdy mecz."
+              </blockquote>
+            </div>
+
+            <div class="card card--case" data-animate data-animate-delay="200">
+              <div class="card__meta">
+                <span class="card__meta-item">Piłka profesjonalna</span>
+              </div>
+              <h3 class="card__title">Zawodnicy Ekstraklasy</h3>
+              <blockquote class="card__quote">
+                „Wracam do Stevena co off-season, bo wiem, że wyjdę silniejszy."
+              </blockquote>
+            </div>
+
+            <div class="card card--case" data-animate data-animate-delay="300">
+              <div class="card__meta">
+                <span class="card__meta-item">Zdrowie & styl życia</span>
+              </div>
+              <h3 class="card__title">Atletyczni</h3>
+              <blockquote class="card__quote">
+                „Chcę być sprawny i zdrowy przez lata. Steven pomógł mi to osiągnąć."
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="text-center mt-4" data-animate data-animate-delay="400">
+            <a href="pages/case-studies.html" class="btn btn--secondary">
+              Zobacz wszystkie historie
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="footer-cta">
+        <div class="container">
+          <h2 class="footer-cta__headline" data-animate>Gotowy na zmianę?</h2>
+          <p class="footer-cta__description" data-animate data-animate-delay="100">
+            Pierwszy krok do lepszej wersji siebie zaczyna się od rozmowy.
+          </p>
+          <div class="cta-group cta-group--center" data-animate data-animate-delay="200">
+            <a href="#" class="btn btn--primary btn--lg" data-calendly="general" data-analytics="cta_calendly_click"
+              data-source="home_final">
+              Umów konsultację
+            </a>
+            <a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp data-analytics="whatsapp_click"
+              data-source="home_final">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Napisz na WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <a href="/" class="logo">
+              <span class="logo__mark">S</span>tevie Athletics
+            </a>
+            <p class="footer__tagline">
+              Przygotowanie motoryczne dla sportowców i aktywnych ludzi. Performance, zdrowie, długofalowy rozwój.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram" data-instagram>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__heading">Nawigacja</h4>
+            <ul class="footer__links">
+              <li><a href="pages/oferta.html" class="footer__link">Oferta</a></li>
+              <li><a href="pages/performance-assessment.html" class="footer__link">Assessment</a></li>
+              <li><a href="pages/case-studies.html" class="footer__link">Case Studies</a></li>
+              <li><a href="pages/o-mnie.html" class="footer__link">O mnie</a></li>
+              <li><a href="pages/faq.html" class="footer__link">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__heading">Usługi</h4>
+            <ul class="footer__links">
+              <li><a href="pages/oferta.html#online" class="footer__link">Treningi Online</a></li>
+              <li><a href="pages/oferta.html#hybryda" class="footer__link">Treningi Hybrydowe</a></li>
+              <li><a href="pages/oferta.html#stacjonarnie" class="footer__link">Treningi Stacjonarne</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__heading">Kontakt</h4>
+            <div class="footer__contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Prosport, ul. Chopina 35<br>Szczecin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2026 Stevie Athletics. Wszystkie prawa zastrzeżone.</p>
+          <div class="footer__legal">
+            <a href="pages/polityka-prywatnosci.html" class="footer__legal-link">Polityka prywatności</a>
+            <a href="pages/cookies.html" class="footer__legal-link">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile CTA -->
+    <div class="mobile-cta" id="mobileCta">
+      <div class="mobile-cta__inner">
+        <div class="mobile-cta__primary">
+          <a href="#" class="btn btn--primary" data-calendly="general" data-analytics="cta_calendly_click"
+            data-source="mobile_sticky">
+            Umów konsultację
+          </a>
+        </div>
+        <a href="#" class="mobile-cta__whatsapp" data-whatsapp data-analytics="whatsapp_click"
+          data-source="mobile_sticky" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+  <script src="config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/visuals.js"></script>
+  <script src="assets/js/analytics.js"></script>
+</body>
+
+</html>
