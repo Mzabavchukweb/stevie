@@ -97,7 +97,7 @@
 /* Headline */
 .hero__headline {
   font-size: clamp(2.5rem, 8vw, 6rem);
-  line-height: 0.9;
+  line-height: 1.2;
   margin-bottom: var(--space-xl);
   font-weight: var(--weight-bold);
   letter-spacing: -0.02em;
