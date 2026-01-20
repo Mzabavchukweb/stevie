@@ -149,7 +149,7 @@ function initMobileCTA() {
 }
 
 /**
- * Calendly integration
+ * Calendly integration - Popup Widget
  */
 function initCalendlyLinks() {
   const calendlyLinks = document.querySelectorAll('[data-calendly]');
@@ -173,8 +173,21 @@ function initCalendlyLinks() {
           url = CONFIG.CALENDLY_GENERAL;
       }
 
-      // Open Calendly in new tab
-      window.open(url, '_blank', 'noopener,noreferrer');
+      // Open Calendly popup widget (no redirect!)
+      if (typeof Calendly !== 'undefined') {
+        Calendly.initPopupWidget({
+          url: url,
+          prefill: {},
+          utm: {
+            utmSource: link.dataset.source || 'website',
+            utmMedium: 'popup',
+            utmCampaign: type
+          }
+        });
+      } else {
+        // Fallback if widget not loaded
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
 
       // Track event
       trackEvent('cta_calendly_click', {

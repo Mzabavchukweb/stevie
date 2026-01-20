@@ -37,6 +37,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- Calendly Widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
@@ -67,12 +71,12 @@
           </div>
         </nav>
         <button class="header__toggle hamburger" id="menuToggle" aria-label="Menu" aria-expanded="false">
-        <div class="hamburger__box">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-        </div>
-      </button>
+          <div class="hamburger__box">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </div>
+        </button>
       </div>
     </header>
 
@@ -80,22 +84,26 @@
     <nav class="mobile-nav" id="mobileNav">
       <div class="mobile-nav__header">
         <button class="mobile-nav__close" id="menuClose" aria-label="Close menu">
-          <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+          <svg viewBox="0 0 24 24">
+            <path d="M18 6L6 18M6 6l12 12"></path>
+          </svg>
         </button>
       </div>
       <div class="mobile-nav__content">
-      <ul class="mobile-nav__menu">
-        <li class="mobile-nav__item"><a href="oferta.html" class="mobile-nav__link">Oferta</a></li>
-        <li class="mobile-nav__item"><a href="performance-assessment.html" class="mobile-nav__link">Assessment</a></li>
-        <li class="mobile-nav__item"><a href="case-studies.html" class="mobile-nav__link active">Case Studies</a></li>
-        <li class="mobile-nav__item"><a href="o-mnie.html" class="mobile-nav__link">O mnie</a></li>
-        <li class="mobile-nav__item"><a href="faq.html" class="mobile-nav__link">FAQ</a></li>
-        <li class="mobile-nav__item"><a href="kontakt.html" class="mobile-nav__link">Kontakt</a></li>
-      </ul>
-      <div class="mobile-nav__cta">
-        <a href="#" class="btn btn--primary" data-calendly="general">Umów konsultację</a>
+        <ul class="mobile-nav__menu">
+          <li class="mobile-nav__item"><a href="oferta.html" class="mobile-nav__link">Oferta</a></li>
+          <li class="mobile-nav__item"><a href="performance-assessment.html" class="mobile-nav__link">Assessment</a>
+          </li>
+          <li class="mobile-nav__item"><a href="case-studies.html" class="mobile-nav__link active">Case Studies</a></li>
+          <li class="mobile-nav__item"><a href="o-mnie.html" class="mobile-nav__link">O mnie</a></li>
+          <li class="mobile-nav__item"><a href="faq.html" class="mobile-nav__link">FAQ</a></li>
+          <li class="mobile-nav__item"><a href="kontakt.html" class="mobile-nav__link">Kontakt</a></li>
+        </ul>
+        <div class="mobile-nav__cta">
+          <a href="#" class="btn btn--primary" data-calendly="general">Umów konsultację</a>
+        </div>
       </div>
-    </div></nav>
+    </nav>
 
     <main class="main-content">
       <!-- Hero -->
