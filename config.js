@@ -1,9 +1,9 @@
 // Stevie Athletics Configuration
 const CONFIG = {
-  // Calendly URLs - Replace with actual URLs
-  CALENDLY_GENERAL: 'https://calendly.com/stevie-athletics/consultation',
-  CALENDLY_ONLINE: 'https://calendly.com/stevie-athletics/online-consultation',
-  CALENDLY_OFFLINE: 'https://calendly.com/stevie-athletics/studio-session',
+  // Calendly URLs
+  CALENDLY_GENERAL: 'https://calendly.com/stevie-athletics/30min',
+  CALENDLY_ONLINE: 'https://calendly.com/stevie-athletics/30min',
+  CALENDLY_OFFLINE: 'https://calendly.com/stevie-athletics/30min',
 
   // WhatsApp
   WHATSAPP_NUMBER: '+48572181536',
