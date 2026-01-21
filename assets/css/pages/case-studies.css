@@ -10,7 +10,7 @@
 }
 
 .page-hero__headline {
-  font-size: var(--text-5xl);
+  font-size: var(--text-4xl);
   margin-bottom: var(--space-md);
 }
 

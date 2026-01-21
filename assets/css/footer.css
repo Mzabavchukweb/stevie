@@ -105,13 +105,15 @@
 }
 
 .footer__brand .logo {
-  font-size: clamp(1.5rem, 3vw, 1.875rem);
-  font-weight: 700;
+  font-size: 48px;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
   color: #fff;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  gap: 0;
+  letter-spacing: -0.02em;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -120,15 +122,16 @@
 }
 
 .footer__brand .logo__mark {
-  font-size: 1.3em;
-  font-weight: 800;
-  background: linear-gradient(135deg, #2d7dd2 0%, #97d8c4 50%, #2d7dd2 100%);
-  background-size: 200% 200%;
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  background: linear-gradient(135deg,
+      var(--color-primary-light) 0%,
+      var(--color-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradientText 4s ease infinite;
-  text-shadow: 0 0 30px rgba(45, 125, 210, 0.5);
+  transition: transform var(--transition-fast);
 }
 
 @keyframes gradientText {

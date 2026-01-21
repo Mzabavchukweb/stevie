@@ -20,7 +20,7 @@
 }
 
 .about-hero__headline {
-  font-size: var(--text-5xl);
+  font-size: var(--text-4xl);
 }
 
 /* Bio Section */
@@ -63,7 +63,7 @@
 }
 
 .about-bio__intro {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   margin-bottom: var(--space-sm);
 }
 

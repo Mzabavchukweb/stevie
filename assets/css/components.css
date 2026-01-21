@@ -453,6 +453,58 @@
   color: var(--color-text-secondary);
 }
 
+/* Tile with Image */
+.tile--with-image {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile__image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.tile__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base) var(--ease-out-expo);
+}
+
+.tile--with-image:hover .tile__image img {
+  transform: scale(1.1);
+}
+
+.tile__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(10, 10, 10, 0.8) 0%,
+      transparent 100%);
+  pointer-events: none;
+}
+
+.tile__content {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tile--with-image .tile__title {
+  margin-bottom: var(--space-xs);
+}
+
+.tile--with-image .tile__description {
+  margin: 0;
+}
+
 /* ─────────────────────────────────────────────────────────────
    FORM ELEMENTS
    ───────────────────────────────────────────────────────────── */
@@ -908,4 +960,67 @@
   background-clip: text;
   position: relative;
   display: inline-block;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BACK TO TOP BUTTON
+   ───────────────────────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(10, 61, 145, 0.4);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(10, 61, 145, 0.5);
+}
+
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 90px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Light mode back-to-top */
+[data-theme="light"] .back-to-top {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(10, 61, 145, 0.3);
+}
+
+[data-theme="light"] .back-to-top:hover {
+  background: var(--color-primary-dark);
+  box-shadow: 0 8px 30px rgba(10, 61, 145, 0.4);
 }

@@ -19,8 +19,8 @@
 }
 
 .page-hero__headline {
-  font-size: var(--text-5xl);
-  margin-bottom: var(--space-md);
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-sm);
 }
 
 .page-hero__subheadline {
@@ -127,10 +127,10 @@
 }
 
 .service-card__title {
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
   margin-bottom: var(--space-xs);
   color: #fff;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .service-card__tagline {
@@ -358,7 +358,7 @@
 }
 
 .not-sure-card__headline {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   margin-bottom: var(--space-md);
 }
 

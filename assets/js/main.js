@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
   initHeader();
   initMobileNav();
   initMobileCTA();
@@ -13,7 +14,71 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initSmoothScroll();
   initLazyLoading();
+  initBackToTop();
 });
+
+/**
+ * Theme Toggle (Dark/Light mode)
+ * Default: Dark theme
+ */
+function initThemeToggle() {
+  const themeToggle = document.getElementById('themeToggle');
+  const themeToggleMobile = document.getElementById('themeToggleMobile');
+  const html = document.documentElement;
+
+  // Get saved theme or default to dark
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+
+  // Apply saved theme
+  if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+  } else {
+    html.removeAttribute('data-theme');
+  }
+
+  // Update toggle button icons
+  const updateToggleIcons = () => {
+    const isLight = html.getAttribute('data-theme') === 'light';
+    const toggles = [themeToggle, themeToggleMobile].filter(Boolean);
+
+    toggles.forEach(toggle => {
+      const sunIcon = toggle.querySelector('.theme-icon--sun');
+      const moonIcon = toggle.querySelector('.theme-icon--moon');
+
+      if (sunIcon && moonIcon) {
+        if (isLight) {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        } else {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        }
+      }
+    });
+  };
+
+  // Toggle theme function
+  const toggleTheme = () => {
+    const isLight = html.getAttribute('data-theme') === 'light';
+
+    if (isLight) {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+
+    updateToggleIcons();
+  };
+
+  // Add event listeners
+  themeToggle?.addEventListener('click', toggleTheme);
+  themeToggleMobile?.addEventListener('click', toggleTheme);
+
+  // Initial icon update
+  updateToggleIcons();
+}
 
 /**
  * Header scroll behavior (throttled)
@@ -361,3 +426,36 @@ function trackEvent(eventName, params = {}) {
 
 // Expose trackEvent globally
 window.trackEvent = trackEvent;
+
+/**
+ * Back to Top button
+ */
+function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+
+  let ticking = false;
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}

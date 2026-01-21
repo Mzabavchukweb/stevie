@@ -43,6 +43,7 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/theme-light.css">
   <link rel="stylesheet" href="../assets/css/pages/faq.css">
 
   <!-- Favicon -->
@@ -53,10 +54,46 @@
   <div class="page-wrapper">
     <header class="header" id="header">
       <div class="header__inner">
-        <a href="../index.html" class="header__logo">
-          <span class="logo"><span class="logo__mark">S</span>tevie Athletics</span>
+        <a href="../index.html" class="header__logo" aria-label="Stevie Athletics - Strona główna">
+          <span class="logo"><span class="logo__mark">S</span><span class="logo__mark">A</span></span>
         </a>
-        <nav class="nav">
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Przełącz tryb jasny/ciemny">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-switcher__current" aria-label="Zmień język">
+            <span>PL</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="lang-switcher__dropdown">
+            <a href="../index.html" class="lang-switcher__option active" data-lang="pl">Polski</a>
+            <a href="../en/" class="lang-switcher__option" data-lang="en">English</a>
+            <a href="../es/" class="lang-switcher__option" data-lang="es">Español</a>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
           <ul class="nav__menu">
             <li class="nav__item"><a href="oferta.html" class="nav__link">Oferta</a></li>
             <li class="nav__item"><a href="performance-assessment.html" class="nav__link">Assessment</a></li>
@@ -82,6 +119,25 @@
     <div class="mobile-nav__backdrop" id="mobileBackdrop"></div>
     <nav class="mobile-nav" id="mobileNav">
       <div class="mobile-nav__header">
+        <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile"
+          aria-label="Przełącz tryb jasny/ciemny">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
         <button class="mobile-nav__close" id="menuClose" aria-label="Close menu">
           <svg viewBox="0 0 24 24">
             <path d="M18 6L6 18M6 6l12 12"></path>
@@ -365,7 +421,7 @@
         <div class="footer__inner">
           <div class="footer__brand">
             <a href="../index.html" class="logo">
-              <span class="logo__mark">S</span>tevie Athletics
+              <span class="logo__mark">S</span><span class="logo__mark">A</span>
             </a>
             <p class="footer__tagline">
               Przygotowanie motoryczne dla sportowców i aktywnych ludzi. Performance, zdrowie, długofalowy rozwój.
@@ -435,6 +491,13 @@
         </a>
       </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Powrót do góry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
   </div>
 
   <script src="../config.js"></script>

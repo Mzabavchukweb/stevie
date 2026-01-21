@@ -4,34 +4,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primary Meta Tags -->
+  <title>Przygotowanie Motoryczne Szczecin | Stevie Athletics - Trener Personalny</title>
   <meta name="description"
-    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne w Szczecinie. Zwiększ swoją siłę i wytrzymałość.">
+    content="Profesjonalne przygotowanie motoryczne w Szczecinie. Treningi siłowe, eksplozywność, powrót po kontuzji. Treningi online, hybrydowe i stacjonarne 1:1. Dla sportowców i osób aktywnych.">
   <meta name="keywords"
-    content="przygotowanie motoryczne, trening siłowy, trening funkcjonalny, Szczecin, online, dla sportowców">
+    content="przygotowanie motoryczne Szczecin, trener personalny Szczecin, trening siłowy Szczecin, strength and conditioning, trening dla sportowców, trening online, powrót po kontuzji, eksplozywność, trening funkcjonalny, personal trainer Szczecin, siłownia Szczecin, trening indywidualny, przygotowanie do sezonu, trening hybrydowy, coaching sportowy">
   <meta name="author" content="Stevie Athletics">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0A3D91">
+
+  <!-- Local SEO -->
+  <meta name="geo.region" content="PL-ZP">
+  <meta name="geo.placename" content="Szczecin">
+  <meta name="geo.position" content="53.4285;14.5528">
+  <meta name="ICBM" content="53.4285, 14.5528">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stevieathletics.com/">
-  <meta property="og:title" content="Stevie Athletics | Przygotowanie Motoryczne">
+  <meta property="og:title" content="Przygotowanie Motoryczne Szczecin | Stevie Athletics">
   <meta property="og:description"
-    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne.">
+    content="Profesjonalne przygotowanie motoryczne dla sportowców. Treningi Online, Hybrydowe i Stacjonarne w Szczecinie. Siła, eksplozywność, zdrowie.">
   <meta property="og:image" content="https://stevieathletics.com/assets/images/og-image.jpg">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Stevie Athletics">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://stevieathletics.com/">
-  <meta property="twitter:title" content="Stevie Athletics | Przygotowanie Motoryczne">
+  <meta property="twitter:title" content="Przygotowanie Motoryczne Szczecin | Stevie Athletics">
   <meta property="twitter:description"
-    content="Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych. Treningi Online, Hybrydowe i Stacjonarne.">
+    content="Profesjonalne przygotowanie motoryczne dla sportowców. Treningi Online, Hybrydowe i Stacjonarne w Szczecinie.">
   <meta property="twitter:image" content="https://stevieathletics.com/assets/images/og-image.jpg">
 
   <link rel="canonical" href="https://stevieathletics.com/">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="assets/images/favicon.svg">
 
-  <title>Stevie Athletics | Przygotowanie Motoryczne</title>
+  <!-- Alternate Languages -->
+  <link rel="alternate" hreflang="pl" href="https://stevieathletics.com/">
+  <link rel="alternate" hreflang="en" href="https://stevieathletics.com/en/">
+  <link rel="alternate" hreflang="es" href="https://stevieathletics.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://stevieathletics.com/">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Stevie Athletics",
+    "description": "Profesjonalne przygotowanie motoryczne dla sportowców i osób aktywnych w Szczecinie",
+    "url": "https://stevieathletics.com",
+    "telephone": "+48572181536",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Chopina 35",
+      "addressLocality": "Szczecin",
+      "postalCode": "70-461",
+      "addressRegion": "zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "53.4285",
+      "longitude": "14.5528"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    },
+    "priceRange": "$$",
+    "sameAs": [
+      "https://instagram.com/stevie.athletics"
+    ],
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.4285",
+        "longitude": "14.5528"
+      },
+      "geoRadius": "50000"
+    }
+  }
+  </script>
 
   <!-- Preload Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,6 +113,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/theme-light.css">
   <link rel="stylesheet" href="assets/css/pages/home.css">
 
   <!-- Favicon -->
@@ -64,11 +125,46 @@
     <!-- Header -->
     <header class="header" id="header">
       <div class="header__inner">
-        <a href="/" class="header__logo">
+        <a href="index.html" class="header__logo" aria-label="Stevie Athletics - Strona główna">
           <span class="logo">
-            <span class="logo__mark">S</span>tevie Athletics
+            <span class="logo__mark">S</span><span class="logo__mark">A</span>
           </span>
         </a>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Przełącz tryb jasny/ciemny">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-switcher__current" aria-label="Zmień język">
+            <span>PL</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="lang-switcher__dropdown">
+            <a href="/" class="lang-switcher__option active" data-lang="pl">Polski</a>
+            <a href="/en/" class="lang-switcher__option" data-lang="en">English</a>
+            <a href="/es/" class="lang-switcher__option" data-lang="es">Español</a>
+          </div>
+        </div>
 
         <nav class="nav" aria-label="Main navigation">
           <ul class="nav__menu">
@@ -113,6 +209,25 @@
     <div class="mobile-nav__backdrop" id="mobileBackdrop"></div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
       <div class="mobile-nav__header">
+        <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile"
+          aria-label="Przełącz tryb jasny/ciemny">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
         <button class="mobile-nav__close" id="menuClose" aria-label="Close menu">
           <svg viewBox="0 0 24 24">
             <path d="M18 6L6 18M6 6l12 12"></path>
@@ -225,43 +340,35 @@
           </div>
 
           <div class="grid grid--3">
-            <a href="pages/oferta.html#online" class="tile" data-animate data-animate-delay="100">
-              <div class="tile__icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="8" y="8" width="48" height="36" rx="4" />
-                  <path d="M20 52h24" />
-                  <path d="M32 44v8" />
-                  <circle cx="32" cy="26" r="8" />
-                </svg>
+            <a href="pages/oferta.html#online" class="tile tile--with-image" data-animate data-animate-delay="100">
+              <div class="tile__image">
+                <img src="assets/images/service-online.png" alt="Trening online" loading="lazy">
               </div>
-              <h3 class="tile__title">Online</h3>
-              <p class="tile__description">Indywidualny plan, feedback, stały kontakt</p>
+              <div class="tile__content">
+                <h3 class="tile__title">Online</h3>
+                <p class="tile__description">Indywidualny plan, feedback, stały kontakt</p>
+              </div>
             </a>
 
-            <a href="pages/oferta.html#hybryda" class="tile" data-animate data-animate-delay="200">
-              <div class="tile__icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="20" cy="32" r="12" />
-                  <circle cx="44" cy="32" r="12" />
-                  <path d="M32 20v24" stroke-dasharray="4 4" />
-                </svg>
+            <a href="pages/oferta.html#hybryda" class="tile tile--with-image" data-animate data-animate-delay="200">
+              <div class="tile__image">
+                <img src="assets/images/service-hybrid.png" alt="Trening hybrydowy" loading="lazy">
               </div>
-              <h3 class="tile__title">Hybryda</h3>
-              <p class="tile__description">Plan online + sesje stacjonarne + testy</p>
+              <div class="tile__content">
+                <h3 class="tile__title">Hybryda</h3>
+                <p class="tile__description">Plan online + sesje stacjonarne + testy</p>
+              </div>
             </a>
 
-            <a href="pages/oferta.html#stacjonarnie" class="tile" data-animate data-animate-delay="300">
-              <div class="tile__icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M32 8l24 14v20L32 56 8 42V22L32 8z" />
-                  <circle cx="32" cy="32" r="8" />
-                  <path d="M32 24v-8" />
-                  <path d="M38 28l6-4" />
-                  <path d="M26 28l-6-4" />
-                </svg>
+            <a href="pages/oferta.html#stacjonarnie" class="tile tile--with-image" data-animate
+              data-animate-delay="300">
+              <div class="tile__image">
+                <img src="assets/images/service-personal.png" alt="Trening stacjonarny" loading="lazy">
               </div>
-              <h3 class="tile__title">Stacjonarnie</h3>
-              <p class="tile__description">Trening 1:1 w studio z pełnym nadzorem</p>
+              <div class="tile__content">
+                <h3 class="tile__title">Stacjonarnie</h3>
+                <p class="tile__description">Trening 1:1 w studio z pełnym nadzorem</p>
+              </div>
             </a>
           </div>
         </div>
@@ -347,7 +454,7 @@
         <div class="footer__inner">
           <div class="footer__brand">
             <a href="/" class="logo">
-              <span class="logo__mark">S</span>tevie Athletics
+              <span class="logo__mark">S</span><span class="logo__mark">A</span>
             </a>
             <p class="footer__tagline">
               Przygotowanie motoryczne dla sportowców i aktywnych ludzi. Performance, zdrowie, długofalowy rozwój.
@@ -422,12 +529,18 @@
         </a>
       </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Powrót do góry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
   </div>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <!-- Scripts (Three.js removed for performance) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
 
   <script src="config.js"></script>
   <script src="assets/js/main.js"></script>
