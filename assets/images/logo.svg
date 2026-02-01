@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <!-- Blue Gradient -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E50A0"/>
+      <stop offset="100%" stop-color="#0A3D91"/>
+    </linearGradient>
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2E6BC6"/>
+      <stop offset="100%" stop-color="#1E50A0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Mark - Dynamic "SA" -->
+  <g class="logo-mark">
+    <!-- S Letter with athletic angle -->
+    <path d="M8 38 C8 38 8 32 16 32 L24 32 C32 32 32 26 24 26 L16 26 C8 26 8 20 8 20 C8 12 16 12 16 12 L32 12" 
+          fill="none" 
+          stroke="url(#logoGradient)" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- A Letter with strong peak -->
+    <path d="M40 38 L52 12 L64 38 M44 28 L60 28" 
+          fill="none" 
+          stroke="url(#logoGradient)" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Text: STEVIE ATHLETICS -->
+  <text x="78" y="32" 
+        font-family="Oswald, sans-serif" 
+        font-weight="600" 
+        font-size="20" 
+        letter-spacing="2"
+        fill="currentColor">
+    <tspan fill="url(#logoGradient)">STEVIE</tspan>
+    <tspan dx="6" fill="currentColor" opacity="0.7">ATHLETICS</tspan>
+  </text>
+  
+  <!-- Dynamic accent line -->
+  <rect x="78" y="36" width="118" height="2" rx="1" fill="url(#accentGradient)" opacity="0.3"/>
+</svg>

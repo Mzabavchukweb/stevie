@@ -125,10 +125,9 @@
     <!-- Header -->
     <header class="header" id="header">
       <div class="header__inner">
-        <a href="index.html" class="header__logo" aria-label="Stevie Athletics - Strona główna">
-          <span class="logo">
-            <span class="logo__mark">S</span><span class="logo__mark">A</span>
-          </span>
+        <a href="index.html" class="header__logo logo" aria-label="Stevie Athletics - Strona główna">
+          <img src="assets/images/logo-light.png" alt="Stevie Athletics" class="logo__img logo__img--light">
+          <img src="assets/images/logo-dark.png" alt="Stevie Athletics" class="logo__img logo__img--dark">
         </a>
 
         <!-- Theme Toggle -->
@@ -152,7 +151,7 @@
         </button>
 
         <!-- Language Switcher -->
-        <div class="lang-switcher" id="langSwitcher">
+        <div class="lang-switcher" id="langSwitcher" onclick="this.classList.toggle('open')">
           <button class="lang-switcher__current" aria-label="Zmień język">
             <span>PL</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -163,6 +162,7 @@
             <a href="/" class="lang-switcher__option active" data-lang="pl">Polski</a>
             <a href="/en/" class="lang-switcher__option" data-lang="en">English</a>
             <a href="/es/" class="lang-switcher__option" data-lang="es">Español</a>
+            <a href="/fr/" class="lang-switcher__option" data-lang="fr">Français</a>
           </div>
         </div>
 
@@ -454,7 +454,8 @@
         <div class="footer__inner">
           <div class="footer__brand">
             <a href="/" class="logo">
-              <span class="logo__mark">S</span><span class="logo__mark">A</span>
+              <img src="assets/images/logo-light.png" alt="Stevie Athletics" class="logo__img logo__img--light">
+              <img src="assets/images/logo-dark.png" alt="Stevie Athletics" class="logo__img logo__img--dark">
             </a>
             <p class="footer__tagline">
               Przygotowanie motoryczne dla sportowców i aktywnych ludzi. Performance, zdrowie, długofalowy rozwój.

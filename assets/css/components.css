@@ -935,31 +935,36 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wide);
-  color: var(--color-text);
   text-decoration: none;
   transition: all var(--transition-fast);
 }
 
-.logo__icon {
-  width: 40px;
-  height: 40px;
+.logo:hover {
+  /* No hover effects - just a link */
 }
 
-.logo__mark {
-  background: linear-gradient(135deg,
-      var(--color-primary-light) 0%,
-      var(--color-primary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
-  display: inline-block;
+.logo__img {
+  height: 160px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Dark mode (default) - show light logo */
+.logo__img--light {
+  display: block;
+}
+
+.logo__img--dark {
+  display: none;
+}
+
+/* Light mode - show dark logo */
+[data-theme="light"] .logo__img--light {
+  display: none;
+}
+
+[data-theme="light"] .logo__img--dark {
+  display: block;
 }
 
 /* ─────────────────────────────────────────────────────────────

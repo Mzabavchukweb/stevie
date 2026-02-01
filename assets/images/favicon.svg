@@ -1,4 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0A3D91"/>
-  <text x="50%" y="50%" dy=".35em" text-anchor="middle" fill="white" font-family="Oswald, sans-serif" font-weight="700" font-size="20">S</text>
+  <defs>
+    <linearGradient id="favGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E50A0"/>
+      <stop offset="100%" stop-color="#0A3D91"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="url(#favGradient)"/>
+  
+  <!-- SA Monogram - simplified for small size -->
+  <g transform="translate(4, 6)">
+    <!-- S -->
+    <path d="M3 17 C3 17 3 13.5 7 13.5 L11 13.5 C15 13.5 15 10 11 10 L7 10 C3 10 3 6.5 3 6.5 C3 3 7 3 7 3 L15 3" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- A -->
+    <path d="M17 17 L22 3 L27 17 M19 12 L25 12" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
 </svg>

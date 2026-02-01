@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <!-- Blue Gradient -->
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E50A0"/>
+      <stop offset="100%" stop-color="#0A3D91"/>
+    </linearGradient>
+    <!-- Highlight -->
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E6BC6"/>
+      <stop offset="50%" stop-color="#1E50A0"/>
+      <stop offset="100%" stop-color="#0A3D91"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background shape - rounded hexagon for athletic feel -->
+  <path d="M30 4 L52 14 L52 46 L30 56 L8 46 L8 14 Z" 
+        fill="url(#iconGradient)" 
+        rx="4"/>
+  
+  <!-- Inner glow -->
+  <path d="M30 8 L48 16 L48 44 L30 52 L12 44 L12 16 Z" 
+        fill="none" 
+        stroke="rgba(255,255,255,0.1)" 
+        stroke-width="1"/>
+  
+  <!-- SA Monogram -->
+  <g transform="translate(12, 16)">
+    <!-- S -->
+    <path d="M4 26 C4 26 4 21 10 21 L16 21 C22 21 22 16 16 16 L10 16 C4 16 4 11 4 11 C4 5 10 5 10 5 L22 5" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- A -->
+    <path d="M26 26 L34 5 L42 26 M29 19 L39 19" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Dynamic accent -->
+  <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+</svg>
