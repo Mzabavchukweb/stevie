@@ -368,3 +368,16 @@
   max-width: 500px;
   margin: 0 auto var(--space-xl);
 }
+
+@media (max-width: 768px) {
+  .not-sure-card {
+    padding: var(--space-xl);
+  }
+
+  .not-sure-card .btn {
+    white-space: normal;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
